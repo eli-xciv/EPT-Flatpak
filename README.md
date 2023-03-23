@@ -9,6 +9,7 @@ flatpak install flathub org.kde.Platform
 
 
 # Build flatpak
+./build
 flatpak-builder build-dir build.yml
 ```
 
