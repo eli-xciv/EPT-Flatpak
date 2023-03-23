@@ -5,6 +5,8 @@ An unofficial packaging of [Entropy Piano Tuner](http://piano-tuner.org/)
 ```
 # Install Flatpak build deps
 flatpak install flathub org.kde.Sdk
+flatpak install flathub org.kde.Platform
+
 
 # Build flatpak
 flatpak-builder build-dir build.yml
