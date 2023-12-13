@@ -13,6 +13,7 @@ An unofficial packaging of [Entropy Piano Tuner](http://piano-tuner.org/)
 ./build.sh
 
 # Build Flatpak
+flatpak-builder --user --install --force-clean build-dir io.github.elixciv.EntropyPianoTuner.yaml
 
 # Install Flatpak
 flatpak-builder --user --install --force-clean dist/fp-build-dir io.github.elixciv.EntropyPianoTuner.yaml
