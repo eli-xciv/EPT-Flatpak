@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# create dist folders
+mkdir -p dist/fp-build-dir
+
 # Unsquash Snap Image
 cd dist
 
@@ -9,4 +12,5 @@ cd dist
 echo "exploding ept snap"
 unsquashfs -q -f -d "squashfs/ept" "6C4nJpuGFmcnRFZTx40PpLgTEr2DqYxZ_2.snap"
 
-
+# Run the build
+flatpak-builder --user --install --force-clean dist/fp-build-dir io.github.elixciv.EntropyPianoTuner.yaml
