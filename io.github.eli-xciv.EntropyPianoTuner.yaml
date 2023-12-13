@@ -1,0 +1,13 @@
+id: io.github.eli-xciv.EntropyPianoTuner
+runtime: org.kde.Platform
+runtime-version: '5.15-21.08'
+sdk: org.kde.Sdk
+command: entropypianotuner
+modules:
+  - name: EPT
+    buildsystem: simple
+    build-commands:
+      - install -D entropypianotuner /app/bin/entropypianotuner
+    sources:
+      - type: file
+        path: dist/entropypianotuner
