@@ -3,6 +3,13 @@ runtime: org.kde.Platform
 runtime-version: '5.15-21.08'
 sdk: org.kde.Sdk
 command: entropypianotuner
+finish-args:
+  - "--share=ipc"
+  - "--socket=x11"
+  - "--nosocket=wayland"
+  - "--socket=pulseaudio"
+  - "--share=network"
+  - "--device=all"
 modules:
   - name: EPT-lib
     buildsystem: simple
